@@ -13,7 +13,7 @@ class PrimaryTextField: UITextField {
     private func setUp(){
         translatesAutoresizingMaskIntoConstraints = false
         layer.cornerRadius = 10
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         layer.backgroundColor = UIColor.systemGray4.cgColor
         textColor = .label
         tintColor = .label
