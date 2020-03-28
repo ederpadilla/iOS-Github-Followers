@@ -29,7 +29,7 @@ class SearchViewController: UIViewController {
 
     @objc private func pushFollowersViewController() {
         guard isInvalidUserName else {
-            print("invalid username 🚀🚀🚀🚀")
+            print("invalid username 😅")
             return
         }
         let followerListViewController = FollowersViewController()
