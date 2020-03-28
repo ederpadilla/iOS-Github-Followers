@@ -25,6 +25,13 @@ class SearchViewController: UIViewController {
         view.addGestureRecognizer(tapOutside)
     }
 
+    @objc private func pushFollowersViewController() {
+        let followerListViewController = FollowersViewController()
+        followerListViewController.userName = userNameTextField.text
+        followerListViewController.title = userNameTextField.text
+        navigationController?.pushViewController(followerListViewController, animated: true)
+    }
+
     private func setUpLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +60,7 @@ class SearchViewController: UIViewController {
     private func setUpButton() {
         view.addSubview(goButton)
 
+        goButton.addTarget(self, action: #selector(pushFollowersViewController), for: .touchUpInside)
         NSLayoutConstraint.activate([
             goButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             goButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
@@ -64,7 +72,7 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("🚀🚀🚀🚀 return pressed")
+        pushFollowersViewController()
         return true
     }
 }
