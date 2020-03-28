@@ -6,6 +6,8 @@ class SearchViewController: UIViewController {
     let userNameTextField = PrimaryTextField()
     let goButton = PrimaryButton(backgroundColor: .systemGreen, title: "Get Followers")
 
+    var isInvalidUserName: Bool { return !userNameTextField.text!.isEmpty }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -26,6 +28,10 @@ class SearchViewController: UIViewController {
     }
 
     @objc private func pushFollowersViewController() {
+        guard isInvalidUserName else {
+            print("invalid username 🚀🚀🚀🚀")
+            return
+        }
         let followerListViewController = FollowersViewController()
         followerListViewController.userName = userNameTextField.text
         followerListViewController.title = userNameTextField.text
