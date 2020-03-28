@@ -9,6 +9,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        dismissKeyBoard()
         setUpLogoImageView()
         setUpTextField()
         setUpButton()
@@ -17,6 +18,11 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+    }
+
+    func dismissKeyBoard() {
+        let tapOutside = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tapOutside)
     }
 
     private func setUpLogoImageView() {
@@ -34,6 +40,7 @@ class SearchViewController: UIViewController {
 
     private func setUpTextField() {
         view.addSubview(userNameTextField)
+        userNameTextField.delegate = self
 
         NSLayoutConstraint.activate([
             userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -53,5 +60,11 @@ class SearchViewController: UIViewController {
             goButton.heightAnchor.constraint(equalToConstant: 51)
         ])
     }
+}
 
+extension SearchViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("🚀🚀🚀🚀 return pressed")
+        return true
+    }
 }

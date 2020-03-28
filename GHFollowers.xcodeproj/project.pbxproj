@@ -17,6 +17,7 @@
 		E6C36870242AB82A004A8372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C3686E242AB82A004A8372 /* LaunchScreen.storyboard */; };
 		E6C3687B242AB82A004A8372 /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3687A242AB82A004A8372 /* GHFollowersTests.swift */; };
 		E6C36886242AB82A004A8372 /* GHFollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C36885242AB82A004A8372 /* GHFollowersUITests.swift */; };
+		E6D2C159242EFEFA00A7B08B /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C158242EFEFA00A7B08B /* FollowersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E6C36881242AB82A004A8372 /* GHFollowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHFollowersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C36885242AB82A004A8372 /* GHFollowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFollowersUITests.swift; sourceTree = "<group>"; };
 		E6C36887242AB82B004A8372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D2C158242EFEFA00A7B08B /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E671718B242E67520029E4A8 /* FavoritesListViewController.swift */,
 				E671718D242E7FC20029E4A8 /* PrimaryButton.swift */,
 				E671718F242E88A20029E4A8 /* PrimaryTextField.swift */,
+				E6D2C158242EFEFA00A7B08B /* FollowersViewController.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				E671718A242E671C0029E4A8 /* SearchViewController.swift in Sources */,
 				E6C36864242AB825004A8372 /* AppDelegate.swift in Sources */,
+				E6D2C159242EFEFA00A7B08B /* FollowersViewController.swift in Sources */,
 				E671718E242E7FC20029E4A8 /* PrimaryButton.swift in Sources */,
 				E671718C242E67520029E4A8 /* FavoritesListViewController.swift in Sources */,
 				E6717190242E88A20029E4A8 /* PrimaryTextField.swift in Sources */,
