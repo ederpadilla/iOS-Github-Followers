@@ -2,7 +2,7 @@ import Foundation
 
 class NetworkManager {
     static let shared = NetworkManager()
-    let baseUrl = "https://api.github.com/"
+    private let baseUrl = "https://api.github.com/"
 
     private init() {
     }
