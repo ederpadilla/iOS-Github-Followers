@@ -9,8 +9,8 @@ class FollowersViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        NetworkManager.shared.getFollowers(for: userName, page: 1) { folowers, errorMessage in
-            guard let followers = folowers else{
+        NetworkManager.shared.getFollowers(for: userName, page: 1) { followers, errorMessage in
+            guard let followers = followers else{
                 self.presentCustomAlertOnMainThread(title: "Bad stuff", message: errorMessage!.rawValue, buttonText: "Ok")
                 return
             }
