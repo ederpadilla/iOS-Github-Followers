@@ -1,8 +1,9 @@
-import Foundation
+import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
     private let baseUrl = "https://api.github.com/"
+    let cache = NSCache<NSString, UIImage>()
 
     private init() {
     }
