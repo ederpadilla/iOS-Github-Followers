@@ -37,7 +37,7 @@ class NetworkManager {
                 let followers = try decoder.decode([Follower].self, from: data)
                 completed(followers, nil)
             } catch {
-                completed(nil, "Unable to complete your request. Please check your internet connection")
+                completed(nil, error.localizedDescription)
             }
         }
         task.resume()
