@@ -135,13 +135,12 @@
 		E654D40724328F67001FA154 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E6BC2D0524341BD900967001 /* viewcontrollers */,
+				E6BC2D0424341BD100967001 /* imageview */,
+				E6BC2D0324341BCB00967001 /* textfield */,
+				E6BC2D0224341BC300967001 /* buttons */,
+				E6BC2D0124341BB700967001 /* views */,
 				BC230560A2425CADC369D705 /* cells */,
-				BC230329A8B2B6551780BB43 /* BodyLabel.swift */,
-				BC23098BCB87E4315A300833 /* PrimaryTextField.swift */,
-				BC23037C44C14E728C7EB9F0 /* PrimaryButton.swift */,
-				BC230388E85CAEEAAD382CC5 /* PrimaryTitleLabel.swift */,
-				BC230BB935005EA1C24F8DC5 /* CustomAlertViewController.swift */,
-				E6326A802433C0E700D4C1DD /* AvatarImageView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -179,6 +178,47 @@
 				E6BC2CFF2433EDD600967001 /* UIHelper.swift */,
 			);
 			path = utilities;
+			sourceTree = "<group>";
+		};
+		E6BC2D0124341BB700967001 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E6BC2D0224341BC300967001 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BC23037C44C14E728C7EB9F0 /* PrimaryButton.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		E6BC2D0324341BCB00967001 /* textfield */ = {
+			isa = PBXGroup;
+			children = (
+				BC230329A8B2B6551780BB43 /* BodyLabel.swift */,
+				BC230388E85CAEEAAD382CC5 /* PrimaryTitleLabel.swift */,
+				BC23098BCB87E4315A300833 /* PrimaryTextField.swift */,
+			);
+			path = textfield;
+			sourceTree = "<group>";
+		};
+		E6BC2D0424341BD100967001 /* imageview */ = {
+			isa = PBXGroup;
+			children = (
+				E6326A802433C0E700D4C1DD /* AvatarImageView.swift */,
+			);
+			path = imageview;
+			sourceTree = "<group>";
+		};
+		E6BC2D0524341BD900967001 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				BC230BB935005EA1C24F8DC5 /* CustomAlertViewController.swift */,
+			);
+			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
 		E6C36857242AB825004A8372 = {
