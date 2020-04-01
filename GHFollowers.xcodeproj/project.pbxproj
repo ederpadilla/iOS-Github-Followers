@@ -27,6 +27,7 @@
 		E654D40D2432A3BC001FA154 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D40C2432A3BC001FA154 /* NetworkManager.swift */; };
 		E654D4122432C848001FA154 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D4112432C848001FA154 /* GFError.swift */; };
 		E6BC2D002433EDD600967001 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC2CFF2433EDD600967001 /* UIHelper.swift */; };
+		E6BC2D0724341C4F00967001 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC2D0624341C4F00967001 /* EmptyStateView.swift */; };
 		E6C3687B242AB82A004A8372 /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3687A242AB82A004A8372 /* GHFollowersTests.swift */; };
 		E6C36886242AB82A004A8372 /* GHFollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C36885242AB82A004A8372 /* GHFollowersUITests.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		E654D40C2432A3BC001FA154 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E654D4112432C848001FA154 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		E6BC2CFF2433EDD600967001 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		E6BC2D0624341C4F00967001 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E6C36860242AB825004A8372 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C36871242AB82A004A8372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C36876242AB82A004A8372 /* GHFollowersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHFollowersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 		E6BC2D0124341BB700967001 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E6BC2D0624341C4F00967001 /* EmptyStateView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			files = (
 				BC230EE69D3A50C760565176 /* BodyLabel.swift in Sources */,
 				BC23099DDCF5EDABDFACB745 /* PrimaryTextField.swift in Sources */,
+				E6BC2D0724341C4F00967001 /* EmptyStateView.swift in Sources */,
 				BC23020D97AE517E5C876EB8 /* PrimaryButton.swift in Sources */,
 				BC230100B78F7333F85CC084 /* PrimaryTitleLabel.swift in Sources */,
 				BC230E02519E3BDDD6353E42 /* FollowersViewController.swift in Sources */,
