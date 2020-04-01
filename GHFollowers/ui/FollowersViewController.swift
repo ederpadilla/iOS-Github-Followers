@@ -6,6 +6,7 @@ class FollowersViewController: UIViewController {
 
     var userName: String!
     var followers: [Follower] = []
+    var filteredFollowers: [Follower] = []
     var page = 1
     var hasMoreFollowers = true
 
@@ -16,6 +17,7 @@ class FollowersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViewController()
+        setUpSearchController()
         setUpCollectionView()
         getFollowers(userName: self.userName, page: self.page)
         setUpDataSource()
@@ -39,6 +41,15 @@ class FollowersViewController: UIViewController {
         collectionView.delegate = self
     }
 
+    private func setUpSearchController(){
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Search for an username😇"
+        searchController.obscuresBackgroundDuringPresentation = true
+        navigationItem.searchController = searchController
+    }
+
     private func getFollowers(userName: String, page : Int) {
         showLoadingView()
         NetworkManager.shared.getFollowers(for: userName, page: page) { [weak self] result in
@@ -54,7 +65,7 @@ class FollowersViewController: UIViewController {
                     DispatchQueue.main.async{ self.showEmptyStateView(with: message, in: self.view) }
                     return
                 }
-                self.updateData()
+                self.updateData(followers: self.followers)
 
             case .failure(let error):
                 self.presentCustomAlertOnMainThread(title: "Bad stuff", message: error.rawValue, buttonText: "Ok")
@@ -71,7 +82,7 @@ class FollowersViewController: UIViewController {
         })
     }
 
-    private func updateData() {
+    private func updateData(followers: [Follower]) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapshot.appendSections([.main])
         snapshot.appendItems(followers)
@@ -91,5 +102,18 @@ extension FollowersViewController : UICollectionViewDelegate{
             page += 1
             getFollowers(userName: userName, page: page)
         }
+    }
+}
+
+extension FollowersViewController : UISearchResultsUpdating, UISearchBarDelegate {
+
+    public func updateSearchResults(for searchController: UISearchController) {
+        guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
+        filteredFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
+        updateData(followers: filteredFollowers)
+    }
+
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        updateData(followers: followers)
     }
 }
