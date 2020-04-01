@@ -24,6 +24,7 @@
 		BC230EA1758BB0D4EB762126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC230A6E4C82999F1B32FCA3 /* SceneDelegate.swift */; };
 		BC230EE69D3A50C760565176 /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC230329A8B2B6551780BB43 /* BodyLabel.swift */; };
 		E6326A812433C0E700D4C1DD /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6326A802433C0E700D4C1DD /* AvatarImageView.swift */; };
+		E647CDF324352D8200252603 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647CDF224352D8200252603 /* UserInfoViewController.swift */; };
 		E654D40D2432A3BC001FA154 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D40C2432A3BC001FA154 /* NetworkManager.swift */; };
 		E654D4122432C848001FA154 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D4112432C848001FA154 /* GFError.swift */; };
 		E6BC2D002433EDD600967001 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC2CFF2433EDD600967001 /* UIHelper.swift */; };
@@ -67,6 +68,7 @@
 		BC230EB1D8F39765658441A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC230F42AB3B6B0BE40F808E /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		E6326A802433C0E700D4C1DD /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		E647CDF224352D8200252603 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		E654D40C2432A3BC001FA154 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E654D4112432C848001FA154 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		E6BC2CFF2433EDD600967001 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				BC230C88DF5426FF7CB754C0 /* FollowersViewController.swift */,
 				BC230F42AB3B6B0BE40F808E /* FavoritesListViewController.swift */,
 				BC230D0C68FD6572ACC32BB0 /* SearchViewController.swift */,
+				E647CDF224352D8200252603 /* UserInfoViewController.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				E6326A812433C0E700D4C1DD /* AvatarImageView.swift in Sources */,
 				BC2307064E2802E0F6080516 /* AppDelegate.swift in Sources */,
 				BC230B52D347CB9002F05C13 /* Follower.swift in Sources */,
+				E647CDF324352D8200252603 /* UserInfoViewController.swift in Sources */,
 				BC2308F95336A02A35D07007 /* User.swift in Sources */,
 				BC230AB0D153C0E5C048E722 /* FollowerViewCell.swift in Sources */,
 			);
