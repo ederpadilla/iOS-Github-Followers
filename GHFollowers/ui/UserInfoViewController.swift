@@ -63,7 +63,6 @@ class UserInfoViewController: UIViewController {
         ])
     }
 
-
     func addChildViewController(childViewController: UIViewController, containerView: UIView) {
         addChild(childViewController)
         containerView.addSubview(childViewController.view)

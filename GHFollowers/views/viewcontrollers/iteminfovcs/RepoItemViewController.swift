@@ -13,4 +13,9 @@ class RepoItemViewController: ItemInfoViewController {
         itemInfoViewTwo.setItemInfoType(itemInfoType: .gists, withCount: user.publicGists)
         actionButton.set(backgroundColor: .systemPurple, title: "GitHub Profile")
     }
+
+    override func actionButtonTapped() {
+        super.actionButtonTapped()
+        delegate.didTapGitHubProfile(for: user)
+    }
 }

@@ -12,4 +12,9 @@ class FollowerItemViewController: ItemInfoViewController {
         itemInfoViewTwo.setItemInfoType(itemInfoType: .gists, withCount: user.following)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Followers")
     }
+
+    override func actionButtonTapped() {
+        super.actionButtonTapped()
+        delegate.didTapGetFollowers(for: user)
+    }
 }
