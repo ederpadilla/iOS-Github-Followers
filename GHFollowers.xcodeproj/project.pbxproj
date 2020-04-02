@@ -29,6 +29,7 @@
 		E654D4122432C848001FA154 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D4112432C848001FA154 /* GFError.swift */; };
 		E6AD67B124365AC5007C0BB9 /* UserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD67B024365AC5007C0BB9 /* UserInfoHeaderViewController.swift */; };
 		E6AD67B324365B08007C0BB9 /* SecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD67B224365B08007C0BB9 /* SecondaryTitleLabel.swift */; };
+		E6AD67B524366792007C0BB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD67B424366792007C0BB9 /* Constants.swift */; };
 		E6BC2D002433EDD600967001 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC2CFF2433EDD600967001 /* UIHelper.swift */; };
 		E6BC2D0724341C4F00967001 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC2D0624341C4F00967001 /* EmptyStateView.swift */; };
 		E6C3687B242AB82A004A8372 /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3687A242AB82A004A8372 /* GHFollowersTests.swift */; };
@@ -75,6 +76,7 @@
 		E654D4112432C848001FA154 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		E6AD67B024365AC5007C0BB9 /* UserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		E6AD67B224365B08007C0BB9 /* SecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		E6AD67B424366792007C0BB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6BC2CFF2433EDD600967001 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		E6BC2D0624341C4F00967001 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E6C36860242AB825004A8372 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 			children = (
 				E654D4112432C848001FA154 /* GFError.swift */,
 				E6BC2CFF2433EDD600967001 /* UIHelper.swift */,
+				E6AD67B424366792007C0BB9 /* Constants.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				BC23020D97AE517E5C876EB8 /* PrimaryButton.swift in Sources */,
 				BC230100B78F7333F85CC084 /* PrimaryTitleLabel.swift in Sources */,
 				BC230E02519E3BDDD6353E42 /* FollowersViewController.swift in Sources */,
+				E6AD67B524366792007C0BB9 /* Constants.swift in Sources */,
 				E6BC2D002433EDD600967001 /* UIHelper.swift in Sources */,
 				BC23076ED10DB5D0C07F7250 /* FavoritesListViewController.swift in Sources */,
 				BC230BEA2FFE6CBAC12D503C /* SearchViewController.swift in Sources */,
