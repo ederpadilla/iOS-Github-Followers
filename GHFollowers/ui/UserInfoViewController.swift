@@ -5,7 +5,7 @@ class UserInfoViewController: UIViewController {
     let headerView = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
-
+    let dateLabel = BodyLabel(textAlignment: .center)
     var itemViews : [UIView] = []
 
     var username: String = ""
@@ -31,7 +31,7 @@ class UserInfoViewController: UIViewController {
         let padding: CGFloat = 20
         let itemHeight: CGFloat = 140
 
-        itemViews = [headerView, itemViewOne, itemViewTwo]
+        itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
 
         for itemView in  itemViews {
             view.addSubview(itemView)
@@ -50,7 +50,10 @@ class UserInfoViewController: UIViewController {
             itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
 
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
-            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+
+            dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding),
+            dateLabel.heightAnchor.constraint(equalToConstant: 18)
         ])
     }
 
@@ -72,6 +75,7 @@ class UserInfoViewController: UIViewController {
                     self.addChildViewController(childViewController: UserInfoHeaderViewController(user: user), containerView: self.headerView)
                     self.addChildViewController(childViewController: RepoItemViewController(user: user), containerView: self.itemViewOne)
                     self.addChildViewController(childViewController: FollowerItemViewController(user: user), containerView: self.itemViewTwo)
+                    self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
                 }
 
             case .failure(let error):
