@@ -24,6 +24,7 @@ class ItemInfoViewController: UIViewController {
         setUpBackgroundView()
         layoutUI()
         setUpStackView()
+        setUpActionButton()
     }
 
     private func setUpBackgroundView() {
