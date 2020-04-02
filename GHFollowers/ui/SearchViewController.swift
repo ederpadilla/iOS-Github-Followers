@@ -32,7 +32,7 @@ class SearchViewController: UIViewController {
             presentCustomAlertOnMainThread(title: "Empty username", message: "Please enter an user name 😅", buttonText: "Ok")
             return
         }
-        let followerListViewController = FollowersViewController()
+        let followerListViewController = FollowersListViewController()
         followerListViewController.userName = userNameTextField.text
         followerListViewController.title = userNameTextField.text
         navigationController?.pushViewController(followerListViewController, animated: true)

@@ -1,6 +1,6 @@
 import UIKit
 
-class FollowersViewController: UIViewController {
+class FollowersListViewController: UIViewController {
 
     enum Section { case main }
 
@@ -92,7 +92,7 @@ class FollowersViewController: UIViewController {
     }
 }
 
-extension FollowersViewController : UICollectionViewDelegate{
+extension FollowersListViewController : UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let activeArray = isSearching ? filteredFollowers : followers
@@ -117,7 +117,7 @@ extension FollowersViewController : UICollectionViewDelegate{
     }
 }
 
-extension FollowersViewController : UISearchResultsUpdating, UISearchBarDelegate {
+extension FollowersListViewController : UISearchResultsUpdating, UISearchBarDelegate {
 
     public func updateSearchResults(for searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
