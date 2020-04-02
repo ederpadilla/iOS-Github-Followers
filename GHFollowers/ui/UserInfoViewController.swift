@@ -1,8 +1,8 @@
 import UIKit
 
 protocol UserInfoViewControllerDelegate: class {
-    func didTapGitHubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+    func didTapGitHubProfile(user: User)
+    func didTapGetFollowers(user: User)
 }
 
 class UserInfoViewController: UIViewController {
@@ -100,11 +100,16 @@ class UserInfoViewController: UIViewController {
 
 extension UserInfoViewController: UserInfoViewControllerDelegate {
 
-    func didTapGitHubProfile(for user: User) {
+    func didTapGitHubProfile(user: User) {
+        guard let url = URL(string: user.htmlUrl) else {
+            presentCustomAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid. 😪", buttonText: "Ok")
+            return
+        }
 
+        presentSafariVC(with: url)
     }
 
-    func didTapGetFollowers(for user: User) {
+    func didTapGetFollowers(user: User) {
 
     }
 }
