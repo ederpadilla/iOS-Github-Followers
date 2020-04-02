@@ -1,5 +1,10 @@
 import UIKit
 
+protocol UserInfoViewControllerDelegate: class {
+    func didTapGitHubProfile(for user: User)
+    func didTapGetFollowers(for user: User)
+}
+
 class UserInfoViewController: UIViewController {
 
     let headerView = UIView()
@@ -9,6 +14,7 @@ class UserInfoViewController: UIViewController {
     var itemViews : [UIView] = []
 
     var username: String = ""
+    var delegate: UserInfoViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,16 +77,36 @@ class UserInfoViewController: UIViewController {
 
             switch result {
             case .success(let user):
-                DispatchQueue.main.async {
-                    self.addChildViewController(childViewController: UserInfoHeaderViewController(user: user), containerView: self.headerView)
-                    self.addChildViewController(childViewController: RepoItemViewController(user: user), containerView: self.itemViewOne)
-                    self.addChildViewController(childViewController: FollowerItemViewController(user: user), containerView: self.itemViewTwo)
-                    self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
-                }
+                DispatchQueue.main.async { self.configureUIElements(user: user) }
 
             case .failure(let error):
                 self.presentCustomAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonText: "Ok")
             }
         }
     }
+
+    private func configureUIElements(user: User) {
+        let repoItemViewController          = RepoItemViewController(user: user)
+        repoItemViewController.delegate = self
+
+        let followerItemViewController = FollowerItemViewController(user: user)
+        followerItemViewController.delegate = self
+
+        self.addChildViewController(childViewController: repoItemViewController, containerView: self.itemViewOne)
+        self.addChildViewController(childViewController: followerItemViewController, containerView: self.itemViewTwo)
+        self.addChildViewController(childViewController: UserInfoHeaderViewController(user: user), containerView: self.headerView)
+        self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
+    }
 }
+
+extension UserInfoViewController: UserInfoViewControllerDelegate {
+
+    func didTapGitHubProfile(for user: User) {
+
+    }
+
+    func didTapGetFollowers(for user: User) {
+
+    }
+}
+

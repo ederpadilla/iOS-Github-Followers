@@ -8,6 +8,7 @@ class ItemInfoViewController: UIViewController {
     let actionButton    = PrimaryButton()
 
     var user: User!
+    var delegate: UserInfoViewControllerDelegate!
 
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
