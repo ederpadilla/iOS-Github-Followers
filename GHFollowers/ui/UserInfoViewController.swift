@@ -33,9 +33,6 @@ class UserInfoViewController: UIViewController {
 
         itemViews = [headerView, itemViewOne, itemViewTwo]
 
-        itemViewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemGreen
-
         for itemView in  itemViews {
             view.addSubview(itemView)
             itemView.translatesAutoresizingMaskIntoConstraints = false
@@ -73,6 +70,8 @@ class UserInfoViewController: UIViewController {
             case .success(let user):
                 DispatchQueue.main.async {
                     self.addChildViewController(childViewController: UserInfoHeaderViewController(user: user), containerView: self.headerView)
+                    self.addChildViewController(childViewController: RepoItemViewController(user: user), containerView: self.itemViewOne)
+                    self.addChildViewController(childViewController: FollowerItemViewController(user: user), containerView: self.itemViewTwo)
                 }
 
             case .failure(let error):
