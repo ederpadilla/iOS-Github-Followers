@@ -8,7 +8,7 @@ class TabBarController: UITabBarController {
         viewControllers = [createSearchNavigationController(), createFavoritesListViewController()]
     }
 
-    
+
     func createSearchNavigationController() -> UINavigationController {
         let searchViewController = SearchViewController()
         searchViewController.title = "Search"
@@ -23,9 +23,5 @@ class TabBarController: UITabBarController {
         favoritesNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
 
         return UINavigationController(rootViewController: favoritesNavController)
-    }
-
-    func test(){
-        print("")
     }
 }
