@@ -15,6 +15,6 @@ class FollowerItemViewController: ItemInfoViewController {
 
     override func actionButtonTapped() {
         super.actionButtonTapped()
-        delegate.didTapGetFollowers(for: user)
+        delegate.didTapGetFollowers(user: user)
     }
 }

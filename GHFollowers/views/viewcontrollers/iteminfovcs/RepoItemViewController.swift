@@ -16,6 +16,6 @@ class RepoItemViewController: ItemInfoViewController {
 
     override func actionButtonTapped() {
         super.actionButtonTapped()
-        delegate.didTapGitHubProfile(for: user)
+        delegate.didTapGitHubProfile(user: user)
     }
 }

@@ -1,5 +1,9 @@
 import UIKit
 
+protocol FollowerListViewControllerDelegate: class {
+    func didRequestFollowers(username: String)
+}
+
 class FollowersListViewController: UIViewController {
 
     enum Section { case main }
@@ -52,7 +56,7 @@ class FollowersListViewController: UIViewController {
         navigationItem.searchController = searchController
     }
 
-    private func getFollowers(userName: String, page : Int) {
+    func getFollowers(userName: String, page : Int) {
         showLoadingView()
         NetworkManager.shared.getFollowers(for: userName, page: page) { [weak self] result in
             guard let self = self else { return }
@@ -100,6 +104,7 @@ extension FollowersListViewController : UICollectionViewDelegate{
 
         let userInfoViewController = UserInfoViewController()
         userInfoViewController.username = follower.login
+        userInfoViewController.delegate = self
         let navigationController = UINavigationController(rootViewController: userInfoViewController)
         present(navigationController, animated: true)
     }
@@ -131,3 +136,11 @@ extension FollowersListViewController : UISearchResultsUpdating, UISearchBarDele
         isSearching = false
     }
 }
+
+extension FollowersListViewController: FollowerListViewControllerDelegate {
+
+    func didRequestFollowers(username: String) {
+
+    }
+}
+
