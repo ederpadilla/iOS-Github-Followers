@@ -21,10 +21,11 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        userNameTextField.text = ""
     }
 
     func dismissKeyBoard() {
-        let tapOutside = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        let tapOutside = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapOutside)
     }
 
@@ -33,16 +34,16 @@ class SearchViewController: UIViewController {
             presentCustomAlertOnMainThread(title: "Empty username", message: "Please enter an user name 😅", buttonText: "Ok")
             return
         }
-        let followerListViewController = FollowersListViewController()
-        followerListViewController.userName = userNameTextField.text
-        followerListViewController.title = userNameTextField.text
+        userNameTextField.resignFirstResponder()
+
+        let followerListViewController = FollowersListViewController(userName: userNameTextField.text ?? "")
         navigationController?.pushViewController(followerListViewController, animated: true)
     }
 
     private func setUpLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = UIImage(named: "gh-logo")!
+        logoImageView.image = Images.ghLogo
 
         let topConstraintConstant : CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 20 : 80
 

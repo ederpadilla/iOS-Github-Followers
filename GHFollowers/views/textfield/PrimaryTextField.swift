@@ -23,6 +23,7 @@ class PrimaryTextField: UITextField {
         minimumFontSize = 12
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
+        clearButtonMode = .whileEditing
         placeholder = "Enter a username"
         returnKeyType = .go
     }
