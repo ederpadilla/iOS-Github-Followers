@@ -2,21 +2,69 @@ import UIKit
 
 class FavoritesListViewController: UIViewController {
 
+    let tableView = UITableView()
+    var favorites: [Follower] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        setUpViewController()
+        setUpTableView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getFavoritesListSaved()
     }
 
     private func getFavoritesListSaved() {
-        PersistenceManager.retrieveFavorites { result in
+        PersistenceManager.retrieveFavorites { [weak self] result in
+            guard let self = self else {
+                return
+            }
             switch result {
             case .success(let favorites):
-                print("favorites 🔥 \(favorites)")
-                break
+                if favorites.isEmpty {
+                    self.showEmptyStateView(with: "No Favorites👩‍🚀?\nAdd one on the follower screen.", in: self.view)
+                } else {
+                    self.favorites = favorites
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                        self.view.bringSubviewToFront(self.tableView)
+                    }
+                }
             case .failure(let error):
-                break
+                self.presentCustomAlertOnMainThread(title: "Something went wrong 🧛‍", message: error.rawValue, buttonText: "Ok")
             }
         }
+    }
+
+    private func setUpViewController() {
+        view.backgroundColor = .systemBackground
+        title = "Favorites 🖤"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    private func setUpTableView() {
+        view.addSubview(tableView)
+
+        tableView.frame = view.bounds
+        tableView.rowHeight = 80
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        tableView.register(FavoriteTableViewCell.self, forCellReuseIdentifier: FavoriteTableViewCell.reuseId)
+    }
+}
+
+extension FavoritesListViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favorites.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: FavoriteTableViewCell.reuseId) as! FavoriteTableViewCell
+        let favorite = favorites[indexPath.row]
+        cell.set(favorite: favorite)
+        return cell
     }
 }
