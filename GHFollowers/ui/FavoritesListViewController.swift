@@ -87,7 +87,7 @@ extension FavoritesListViewController: UITableViewDataSource, UITableViewDelegat
         PersistenceManager.updateWith(favorite: favorite, actionType: .remove) { [weak self] error in
             guard let self = self else { return }
             guard let error = error else { return }
-            self.presentCustomAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonText: "Ok")
+            self.presentCustomAlertOnMainThread(title: "Unable to remove 😅", message: error.rawValue, buttonText: "Ok")
         }
     }
 }
