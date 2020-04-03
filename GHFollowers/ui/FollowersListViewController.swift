@@ -37,6 +37,8 @@ class FollowersListViewController: UIViewController {
     private func setUpViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addToFavorite))
+        navigationItem.rightBarButtonItem = addButton
     }
 
     private func setUpCollectionView() {
@@ -45,6 +47,10 @@ class FollowersListViewController: UIViewController {
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
         collectionView.delegate = self
+    }
+
+    @objc private func addToFavorite() {
+        print("Add button taped 🚀")
     }
 
     private func setUpSearchController(){
