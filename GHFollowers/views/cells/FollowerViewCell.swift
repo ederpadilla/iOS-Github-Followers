@@ -5,7 +5,6 @@ class FollowerCell: UICollectionViewCell {
     static let reuseId = "FollowerCell"
 
     let avatarImageView = AvatarImageView(frame: .zero)
-
     let userNameLabel = PrimaryTitleLabel(textAlignment: .center, fontSize: 16)
 
     override init(frame: CGRect) {
@@ -13,14 +12,15 @@ class FollowerCell: UICollectionViewCell {
         setUp()
     }
 
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     func setFollower(follower: Follower) {
         userNameLabel.text = follower.login
         avatarImageView.downloadImage(from: follower.avatarUrl)
     }
 
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
 
     private func setUp() {
         let padding: CGFloat = 8
