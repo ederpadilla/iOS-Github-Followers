@@ -8,8 +8,8 @@ class FollowerItemViewController: ItemInfoViewController {
     }
 
     private func configureItems() {
-        itemInfoViewOne.setItemInfoType(itemInfoType: .repos, withCount: user.followers)
-        itemInfoViewTwo.setItemInfoType(itemInfoType: .gists, withCount: user.following)
+        itemInfoViewOne.setItemInfoType(itemInfoType: .followers, withCount: user.followers)
+        itemInfoViewTwo.setItemInfoType(itemInfoType: .following, withCount: user.following)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Followers")
     }
 
