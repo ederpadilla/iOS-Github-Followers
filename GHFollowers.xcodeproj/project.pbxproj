@@ -28,6 +28,7 @@
 		BC230F601334D35E42BFACD7 /* ItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC230D08CBE422C6792D3FB8 /* ItemInfoViewController.swift */; };
 		E629EAE024379FC6004F0A0A /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EADF24379FC6004F0A0A /* PersistenceManager.swift */; };
 		E629EAE22437BD91004F0A0A /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE12437BD91004F0A0A /* FavoriteTableViewCell.swift */; };
+		E629EAE52437F0AC004F0A0A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE42437F0AC004F0A0A /* TabBarController.swift */; };
 		E6326A812433C0E700D4C1DD /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6326A802433C0E700D4C1DD /* AvatarImageView.swift */; };
 		E647CDF324352D8200252603 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647CDF224352D8200252603 /* UserInfoViewController.swift */; };
 		E654D40D2432A3BC001FA154 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D40C2432A3BC001FA154 /* NetworkManager.swift */; };
@@ -83,6 +84,7 @@
 		BC230FDA12E1CFF3A83FAD12 /* RepoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoItemViewController.swift; sourceTree = "<group>"; };
 		E629EADF24379FC6004F0A0A /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		E629EAE12437BD91004F0A0A /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		E629EAE42437F0AC004F0A0A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E6326A802433C0E700D4C1DD /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		E647CDF224352D8200252603 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		E654D40C2432A3BC001FA154 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -169,9 +171,18 @@
 			path = support;
 			sourceTree = "<group>";
 		};
+		E629EAE32437F073004F0A0A /* tabbarcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				E629EAE42437F0AC004F0A0A /* TabBarController.swift */,
+			);
+			path = tabbarcontrollers;
+			sourceTree = "<group>";
+		};
 		E654D40724328F67001FA154 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E629EAE32437F073004F0A0A /* tabbarcontrollers */,
 				E6BC2D0524341BD900967001 /* viewcontrollers */,
 				E6BC2D0424341BD100967001 /* imageview */,
 				E6BC2D0324341BCB00967001 /* textfield */,
@@ -452,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC230EE69D3A50C760565176 /* BodyLabel.swift in Sources */,
+				E629EAE52437F0AC004F0A0A /* TabBarController.swift in Sources */,
 				BC23099DDCF5EDABDFACB745 /* PrimaryTextField.swift in Sources */,
 				E6BC2D0724341C4F00967001 /* EmptyStateView.swift in Sources */,
 				BC23020D97AE517E5C876EB8 /* PrimaryButton.swift in Sources */,
