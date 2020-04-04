@@ -15,6 +15,7 @@ class FollowersListViewController: DataLoadingViewController {
     var hasMoreFollowers = true
 
     var isSearching = false
+    var isLoadingMoreFollowers = false
 
     var collectionView: UICollectionView!
 
@@ -96,6 +97,7 @@ class FollowersListViewController: DataLoadingViewController {
     }
 
     func getFollowers(userName: String, page : Int) {
+        isLoadingMoreFollowers = true
         showLoadingView()
         NetworkManager.shared.getFollowers(for: userName, page: page) { [weak self] result in
             guard let self = self else { return }
@@ -117,6 +119,7 @@ class FollowersListViewController: DataLoadingViewController {
 
             }
         }
+        isLoadingMoreFollowers = false
     }
 
     private func setUpDataSource() {
@@ -154,7 +157,7 @@ extension FollowersListViewController : UICollectionViewDelegate{
         let height = scrollView.frame.size.height
 
         if offsetY > contentHeight - height {
-            guard hasMoreFollowers else { return }
+            guard hasMoreFollowers, !isLoadingMoreFollowers else { return }
             page += 1
             getFollowers(userName: userName, page: page)
         }
