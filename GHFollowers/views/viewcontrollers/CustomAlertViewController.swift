@@ -2,7 +2,7 @@ import UIKit
 
 class CustomAlertViewController: UIViewController {
 
-    let containerViewController = UIView()
+    let containerViewController = CustomAlertContainerView()
     let titleLabel = PrimaryTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = BodyLabel(textAlignment: .center)
     let acceptButton = PrimaryButton(backgroundColor: .systemPink, title: "Ok")
@@ -26,7 +26,7 @@ class CustomAlertViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         setUpContainerView()
         setUpTitle()
         setUpMessage()
@@ -35,11 +35,6 @@ class CustomAlertViewController: UIViewController {
 
     private func setUpContainerView() {
         view.addSubview(containerViewController)
-        containerViewController.backgroundColor = .systemBackground
-        containerViewController.layer.cornerRadius = 16
-        containerViewController.layer.borderWidth = 2
-        containerViewController.layer.borderColor = UIColor.white.cgColor
-        containerViewController.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             containerViewController.centerYAnchor.constraint(equalTo: view.centerYAnchor),

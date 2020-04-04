@@ -30,6 +30,7 @@
 		E629EAE22437BD91004F0A0A /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE12437BD91004F0A0A /* FavoriteTableViewCell.swift */; };
 		E629EAE52437F0AC004F0A0A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE42437F0AC004F0A0A /* TabBarController.swift */; };
 		E629EAE72437FDE9004F0A0A /* UIconstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE62437FDE9004F0A0A /* UIconstants.swift */; };
+		E629EAE924380A78004F0A0A /* CustomAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE824380A78004F0A0A /* CustomAlertContainerView.swift */; };
 		E6326A812433C0E700D4C1DD /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6326A802433C0E700D4C1DD /* AvatarImageView.swift */; };
 		E647CDF324352D8200252603 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647CDF224352D8200252603 /* UserInfoViewController.swift */; };
 		E654D40D2432A3BC001FA154 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D40C2432A3BC001FA154 /* NetworkManager.swift */; };
@@ -87,6 +88,7 @@
 		E629EAE12437BD91004F0A0A /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		E629EAE42437F0AC004F0A0A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E629EAE62437FDE9004F0A0A /* UIconstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIconstants.swift; sourceTree = "<group>"; };
+		E629EAE824380A78004F0A0A /* CustomAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContainerView.swift; sourceTree = "<group>"; };
 		E6326A802433C0E700D4C1DD /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		E647CDF224352D8200252603 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		E654D40C2432A3BC001FA154 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				E6BC2D0624341C4F00967001 /* EmptyStateView.swift */,
 				E6AD67B624367D5C007C0BB9 /* ItemInfoView.swift */,
+				E629EAE824380A78004F0A0A /* CustomAlertContainerView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				BC230942B7869FF0B57EF16D /* CustomAlertViewController.swift in Sources */,
 				E629EAE22437BD91004F0A0A /* FavoriteTableViewCell.swift in Sources */,
 				E6AD67B324365B08007C0BB9 /* SecondaryTitleLabel.swift in Sources */,
+				E629EAE924380A78004F0A0A /* CustomAlertContainerView.swift in Sources */,
 				E629EAE024379FC6004F0A0A /* PersistenceManager.swift in Sources */,
 				BC23021B4FF9CBC03DE5C68B /* UIViewController+Extension.swift in Sources */,
 				BC230EA1758BB0D4EB762126 /* SceneDelegate.swift in Sources */,
