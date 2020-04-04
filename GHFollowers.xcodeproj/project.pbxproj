@@ -31,6 +31,7 @@
 		E629EAE52437F0AC004F0A0A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE42437F0AC004F0A0A /* TabBarController.swift */; };
 		E629EAE72437FDE9004F0A0A /* UIconstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE62437FDE9004F0A0A /* UIconstants.swift */; };
 		E629EAE924380A78004F0A0A /* CustomAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAE824380A78004F0A0A /* CustomAlertContainerView.swift */; };
+		E629EAEB2438128D004F0A0A /* DataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629EAEA2438128D004F0A0A /* DataLoadingViewController.swift */; };
 		E6326A812433C0E700D4C1DD /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6326A802433C0E700D4C1DD /* AvatarImageView.swift */; };
 		E647CDF324352D8200252603 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647CDF224352D8200252603 /* UserInfoViewController.swift */; };
 		E654D40D2432A3BC001FA154 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654D40C2432A3BC001FA154 /* NetworkManager.swift */; };
@@ -88,6 +89,7 @@
 		E629EAE42437F0AC004F0A0A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E629EAE62437FDE9004F0A0A /* UIconstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIconstants.swift; sourceTree = "<group>"; };
 		E629EAE824380A78004F0A0A /* CustomAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContainerView.swift; sourceTree = "<group>"; };
+		E629EAEA2438128D004F0A0A /* DataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingViewController.swift; sourceTree = "<group>"; };
 		E6326A802433C0E700D4C1DD /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		E647CDF224352D8200252603 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		E654D40C2432A3BC001FA154 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -275,9 +277,10 @@
 		E6BC2D0524341BD900967001 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				BC230C4D668DD505E0EB27FB /* iteminfovcs */,
 				BC230BB935005EA1C24F8DC5 /* CustomAlertViewController.swift */,
 				E6AD67B024365AC5007C0BB9 /* UserInfoHeaderViewController.swift */,
-				BC230C4D668DD505E0EB27FB /* iteminfovcs */,
+				E629EAEA2438128D004F0A0A /* DataLoadingViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				BC230E02519E3BDDD6353E42 /* FollowersListViewController.swift in Sources */,
 				E6AD67B524366792007C0BB9 /* Constants.swift in Sources */,
 				E6BC2D002433EDD600967001 /* UIHelper.swift in Sources */,
+				E629EAEB2438128D004F0A0A /* DataLoadingViewController.swift in Sources */,
 				BC23076ED10DB5D0C07F7250 /* FavoritesListViewController.swift in Sources */,
 				BC230BEA2FFE6CBAC12D503C /* SearchViewController.swift in Sources */,
 				E654D4122432C848001FA154 /* GFError.swift in Sources */,

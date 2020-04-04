@@ -5,7 +5,7 @@ protocol UserInfoViewControllerDelegate: class {
     func didTapGetFollowers(user: User)
 }
 
-class UserInfoViewController: UIViewController {
+class UserInfoViewController: DataLoadingViewController {
 
     let headerView = UIView()
     let itemViewOne = UIView()

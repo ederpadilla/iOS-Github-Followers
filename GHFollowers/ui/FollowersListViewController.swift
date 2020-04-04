@@ -4,7 +4,7 @@ protocol FollowerListViewControllerDelegate: class {
     func didRequestFollowers(username: String)
 }
 
-class FollowersListViewController: UIViewController {
+class FollowersListViewController: DataLoadingViewController {
 
     enum Section { case main }
 
