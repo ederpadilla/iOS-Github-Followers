@@ -1,5 +1,10 @@
 import UIKit
 
+protocol InfoViewControllerDelegate: class {
+    func didTapGitHubProfile(user: User)
+    func didTapGetFollowers(user: User)
+}
+
 class ItemInfoViewController: UIViewController {
 
     let stackView       = UIStackView()
@@ -8,7 +13,7 @@ class ItemInfoViewController: UIViewController {
     let actionButton    = PrimaryButton()
 
     var user: User!
-    weak var delegate: UserInfoViewControllerDelegate!
+    weak var delegate: InfoViewControllerDelegate!
 
     init(user: User) {
         super.init(nibName: nil, bundle: nil)

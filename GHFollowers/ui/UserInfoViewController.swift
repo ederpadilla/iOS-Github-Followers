@@ -1,10 +1,5 @@
 import UIKit
 
-protocol UserInfoViewControllerDelegate: class {
-    func didTapGitHubProfile(user: User)
-    func didTapGetFollowers(user: User)
-}
-
 class UserInfoViewController: DataLoadingViewController {
 
     let headerView = UIView()
@@ -98,7 +93,7 @@ class UserInfoViewController: DataLoadingViewController {
     }
 }
 
-extension UserInfoViewController: UserInfoViewControllerDelegate {
+extension UserInfoViewController: InfoViewControllerDelegate {
 
     func didTapGitHubProfile(user: User) {
         guard let url = URL(string: user.htmlUrl) else {
