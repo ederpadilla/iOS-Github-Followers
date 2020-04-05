@@ -1,6 +1,12 @@
 import UIKit
 
+protocol FollowerItemViewControllerDelegate: class {
+    func didTapGetFollowers(user: User)
+}
+
 class FollowerItemViewController: ItemInfoViewController {
+
+    weak var delegate: FollowerItemViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -97,25 +97,28 @@ class UserInfoViewController: DataLoadingViewController {
     }
 }
 
-extension UserInfoViewController: InfoViewControllerDelegate {
-
+extension UserInfoViewController: RepoItemViewControllerDelegate {
+    
+    
     func didTapGitHubProfile(user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentCustomAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid. 😪", buttonText: "Ok")
             return
         }
-
+        
         presentSafariVC(with: url)
     }
+}
 
+extension UserInfoViewController: FollowerItemViewControllerDelegate {
+    
     func didTapGetFollowers(user: User) {
         guard user.followers != 0 else {
             presentCustomAlertOnMainThread(title: "No followers", message: "This user has no followers. What a shame 😞.", buttonText: "So sad")
             return
         }
-
+        
         delegate.didRequestFollowers(username: user.login)
         dismissViewController()
     }
 }
-
