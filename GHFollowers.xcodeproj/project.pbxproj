@@ -45,6 +45,7 @@
 		E6C3687B242AB82A004A8372 /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3687A242AB82A004A8372 /* GHFollowersTests.swift */; };
 		E6C36886242AB82A004A8372 /* GHFollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C36885242AB82A004A8372 /* GHFollowersUITests.swift */; };
 		E6F2372E243A48CA0034F843 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2372D243A48CA0034F843 /* UIView+Extension.swift */; };
+		E6F23730243A56BC0034F843 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2372F243A56BC0034F843 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		E6C36885242AB82A004A8372 /* GHFollowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFollowersUITests.swift; sourceTree = "<group>"; };
 		E6C36887242AB82B004A8372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F2372D243A48CA0034F843 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E6F2372F243A56BC0034F843 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				BC230D7ACCD924044F902C2B /* UIViewController+Extension.swift */,
 				E6AD67C0243692DB007C0BB9 /* Date.swift */,
 				E6F2372D243A48CA0034F843 /* UIView+Extension.swift */,
+				E6F2372F243A56BC0034F843 /* UITableView+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			files = (
 				BC230EE69D3A50C760565176 /* BodyLabel.swift in Sources */,
 				E629EAE72437FDE9004F0A0A /* UIconstants.swift in Sources */,
+				E6F23730243A56BC0034F843 /* UITableView+Extension.swift in Sources */,
 				E629EAE52437F0AC004F0A0A /* TabBarController.swift in Sources */,
 				BC23099DDCF5EDABDFACB745 /* PrimaryTextField.swift in Sources */,
 				E6BC2D0724341C4F00967001 /* EmptyStateView.swift in Sources */,
