@@ -8,9 +8,7 @@ enum PersistenceManager {
         case add, remove
     }
 
-    enum Keys {
-        static let favorites = "favorites"
-    }
+    enum Keys { static let favorites = "favorites" }
 
     static func save(favorites: [Follower]) -> GFError? {
         do {
@@ -54,7 +52,9 @@ enum PersistenceManager {
 
                 case .remove:
                     //retrievedFavorites.removeAll { $0.login == favorite.login }
-                    favorites.removeAll{ fav in return fav.login == favorite.login }
+                    favorites.removeAll { fav in
+                        return fav.login == favorite.login
+                    }
                 }
 
                 completed(save(favorites: favorites))

@@ -2,10 +2,10 @@ import UIKit
 
 class ItemInfoViewController: UIViewController {
 
-    let stackView       = UIStackView()
+    let stackView = UIStackView()
     let itemInfoViewOne = ItemInfoView()
     let itemInfoViewTwo = ItemInfoView()
-    let actionButton    = PrimaryButton()
+    let actionButton = PrimaryButton()
 
     var user: User!
 
@@ -28,7 +28,7 @@ class ItemInfoViewController: UIViewController {
 
     private func setUpBackgroundView() {
         view.layer.cornerRadius = 18
-        view.backgroundColor    = .secondarySystemBackground
+        view.backgroundColor = .secondarySystemBackground
     }
 
     private func layoutUI() {

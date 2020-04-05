@@ -72,7 +72,6 @@ class CustomAlertViewController: UIViewController {
         acceptButton.setTitle(buttonText, for: .normal)
         acceptButton.addTarget(self, action: #selector(dismissViewController), for: .touchUpInside)
 
-
         NSLayoutConstraint.activate([
             acceptButton.bottomAnchor.constraint(equalTo: containerViewController.bottomAnchor, constant: -padding),
             acceptButton.leadingAnchor.constraint(equalTo: containerViewController.leadingAnchor, constant: padding),

@@ -23,21 +23,26 @@ class FavoritesListViewController: UIViewController {
             }
             switch result {
             case .success(let favorites):
-                if favorites.isEmpty {
-                    self.showEmptyStateView(with: "No Favorites👩‍🚀?\nAdd one on the follower screen.", in: self.view)
-                } else {
-                    self.favorites = favorites
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.view.bringSubviewToFront(self.tableView)
-                    }
-                    // or
-                    //self.tableView.reloadDataOnMainThread()
-                    //self.view.bringSubviewToFront(self.tableView)
-                }
+                self.successFavorites(favorites: favorites)
+
             case .failure(let error):
                 self.presentCustomAlertOnMainThread(title: "Something went wrong 🧛‍", message: error.rawValue, buttonText: "Ok")
             }
+        }
+    }
+
+    private func successFavorites(favorites: [Follower]) {
+        if favorites.isEmpty {
+            self.showEmptyStateView(with: "No Favorites👩‍🚀?\nAdd one on the follower screen.", in: self.view)
+        } else {
+            self.favorites = favorites
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.view.bringSubviewToFront(self.tableView)
+            }
+            // or
+            //self.tableView.reloadDataOnMainThread()
+            //self.view.bringSubviewToFront(self.tableView)
         }
     }
 

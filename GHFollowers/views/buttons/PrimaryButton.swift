@@ -17,10 +17,10 @@ class PrimaryButton: UIButton {
         self.setTitle(title, for: .normal)
     }
 
-    private func setUp(){
+    private func setUp() {
         layer.cornerRadius = 10
-        setTitleColor(.white, for: .normal)
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+        setTitleColor(.white, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
     }
 

@@ -19,4 +19,11 @@ class AvatarImageView: UIImageView {
         image = placeHolderImage
         translatesAutoresizingMaskIntoConstraints = false
     }
+
+    func downloadAvatarImage(avatarUrl: String) {
+        NetworkManager.shared.downloadImage(from: avatarUrl) { [weak self] image in
+            guard let self = self else { return }
+            DispatchQueue.main.async { self.image = image }
+        }
+    }
 }
