@@ -1,5 +1,9 @@
 import UIKit
 
+protocol UserInfoViewControllerDelegate: class {
+    func didRequestFollowers(username: String)
+}
+
 class UserInfoViewController: DataLoadingViewController {
 
     let headerView = UIView()
@@ -9,7 +13,7 @@ class UserInfoViewController: DataLoadingViewController {
     var itemViews : [UIView] = []
 
     var username: String = ""
-    weak var delegate: FollowerListViewControllerDelegate!
+    weak var delegate: UserInfoViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()

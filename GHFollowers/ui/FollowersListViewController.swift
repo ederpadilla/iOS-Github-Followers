@@ -1,9 +1,5 @@
 import UIKit
 
-protocol FollowerListViewControllerDelegate: class {
-    func didRequestFollowers(username: String)
-}
-
 class FollowersListViewController: DataLoadingViewController {
 
     enum Section { case main }
@@ -180,7 +176,7 @@ extension FollowersListViewController : UISearchResultsUpdating, UISearchBarDele
     }
 }
 
-extension FollowersListViewController: FollowerListViewControllerDelegate {
+extension FollowersListViewController: UserInfoViewControllerDelegate {
 
     func didRequestFollowers(username: String) {
         self.userName = username
