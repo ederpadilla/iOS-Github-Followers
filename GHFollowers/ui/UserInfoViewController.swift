@@ -6,6 +6,9 @@ protocol UserInfoViewControllerDelegate: class {
 
 class UserInfoViewController: DataLoadingViewController {
 
+    let scrollView = UIScrollView()
+    let contentVew = UIView()
+
     let headerView = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
@@ -18,6 +21,7 @@ class UserInfoViewController: DataLoadingViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViewController()
+        setUpScrollView()
         layoutUI()
         getUserInfo()
     }
@@ -39,16 +43,16 @@ class UserInfoViewController: DataLoadingViewController {
         itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
 
         for itemView in  itemViews {
-            view.addSubview(itemView)
+            contentVew.addSubview(itemView)
             itemView.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-                itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding)
+                itemView.leadingAnchor.constraint(equalTo: contentVew.leadingAnchor, constant: padding),
+                itemView.trailingAnchor.constraint(equalTo: contentVew.trailingAnchor, constant: -padding)
             ])
         }
 
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerView.topAnchor.constraint(equalTo: contentVew.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 210),
 
             itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
@@ -67,6 +71,18 @@ class UserInfoViewController: DataLoadingViewController {
         containerView.addSubview(childViewController.view)
         childViewController.view.frame = containerView.bounds
         childViewController.didMove(toParent: self)
+    }
+
+    private func setUpScrollView() {
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentVew)
+        scrollView.pinToEdges(superView: view)
+        contentVew.pinToEdges(superView: scrollView)
+
+        NSLayoutConstraint.activate([
+            contentVew.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentVew.heightAnchor.constraint(equalToConstant: 600)
+        ])
     }
 
     private func getUserInfo() {
