@@ -7,6 +7,7 @@ class EmptyStateView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addSubViews(views: messageLabel, logoImageView)
         setUpMessageLabel()
         setUpLogoImageView()
     }
@@ -21,7 +22,6 @@ class EmptyStateView: UIView {
     }
 
     private func setUpMessageLabel() {
-        addSubview(messageLabel)
         messageLabel.numberOfLines = 3
         messageLabel.textColor = .secondaryLabel
 
@@ -38,7 +38,6 @@ class EmptyStateView: UIView {
 
 
     private func setUpLogoImageView() {
-        addSubview(logoImageView)
         logoImageView.image = Images.emptyStateLogo
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
 

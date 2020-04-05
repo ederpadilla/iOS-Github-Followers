@@ -20,9 +20,7 @@ class ItemInfoView: UIView {
     }
 
     private func setUp() {
-        addSubview(symbolImageView)
-        addSubview(titleLabel)
-        addSubview(countLabel)
+        addSubViews(views: symbolImageView, titleLabel, countLabel)
 
         symbolImageView.translatesAutoresizingMaskIntoConstraints = false
         symbolImageView.contentMode = .scaleAspectFill
