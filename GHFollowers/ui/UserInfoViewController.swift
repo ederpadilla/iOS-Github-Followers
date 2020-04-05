@@ -84,11 +84,9 @@ class UserInfoViewController: DataLoadingViewController {
     }
 
     private func configureUIElements(user: User) {
-        let repoItemViewController          = RepoItemViewController(user: user)
-        repoItemViewController.delegate = self
+        let repoItemViewController          = RepoItemViewController(user: user, delegate: self)
 
-        let followerItemViewController = FollowerItemViewController(user: user)
-        followerItemViewController.delegate = self
+        let followerItemViewController = FollowerItemViewController(user: user, delegate: self)
 
         self.addChildViewController(childViewController: repoItemViewController, containerView: self.itemViewOne)
         self.addChildViewController(childViewController: followerItemViewController, containerView: self.itemViewTwo)
