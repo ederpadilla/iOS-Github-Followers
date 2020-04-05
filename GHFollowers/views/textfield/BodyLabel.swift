@@ -19,6 +19,7 @@ class BodyLabel: UILabel {
     private func setUp() {
         translatesAutoresizingMaskIntoConstraints = false
         font = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontForContentSizeCategory = true
         textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.75
