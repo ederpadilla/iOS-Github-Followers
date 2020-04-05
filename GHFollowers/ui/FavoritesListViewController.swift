@@ -31,6 +31,9 @@ class FavoritesListViewController: UIViewController {
                         self.tableView.reloadData()
                         self.view.bringSubviewToFront(self.tableView)
                     }
+                    // or
+                    //self.tableView.reloadDataOnMainThread()
+                    //self.view.bringSubviewToFront(self.tableView)
                 }
             case .failure(let error):
                 self.presentCustomAlertOnMainThread(title: "Something went wrong 🧛‍", message: error.rawValue, buttonText: "Ok")
