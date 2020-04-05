@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="643be751-5555-4dec-a6f2-44837ce0136b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Zb0zo1W7loEKljk9koM9pVeCAt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="GHFollowers" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GHFollowers.xcodeproj" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GHFollowers" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GHFollowers" TARGET_NAME="GHFollowers" CONFIG_NAME="Debug" SCHEME_NAME="GHFollowers" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="GHFollowers" RUN_TARGET_NAME="GHFollowers" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="643be751-5555-4dec-a6f2-44837ce0136b" name="Default Changelist" comment="" />
+      <created>1585092750804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585092750804</updated>
+      <workItem from="1585092755379" duration="996000" />
+      <workItem from="1585172503880" duration="271000" />
+      <workItem from="1585326087276" duration="5947000" />
+      <workItem from="1585343292676" duration="3153000" />
+      <workItem from="1585353926412" duration="449000" />
+      <workItem from="1585365031540" duration="3638000" />
+      <workItem from="1585436452180" duration="6980000" />
+      <workItem from="1585590093863" duration="10777000" />
+      <workItem from="1585669874714" duration="1980000" />
+      <workItem from="1585678406195" duration="17489000" />
+      <workItem from="1585754226454" duration="1080000" />
+      <workItem from="1585756936454" duration="6032000" />
+      <workItem from="1585781885734" duration="1068000" />
+      <workItem from="1585841983557" duration="942000" />
+      <workItem from="1585849076652" duration="14250000" />
+      <workItem from="1585888514267" duration="232000" />
+      <workItem from="1585927285824" duration="10618000" />
+      <workItem from="1585949784564" duration="2226000" />
+      <workItem from="1585957660088" duration="621000" />
+      <workItem from="1585958785418" duration="5163000" />
+      <workItem from="1586060037031" duration="303000" />
+      <workItem from="1586104879325" duration="642000" />
+    </task>
+    <task id="LOCAL-00001" summary="add 🏄🏻 CustomAlertViewController">
+      <created>1585446696014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585446696014</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor good typo">
+      <created>1585616560406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585616560406</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Result Type for a better code 🚀🚀">
+      <created>1585617431024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585617431024</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add pagination and fix bug in url">
+      <created>1585698590863</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585698590863</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creater secondary title label">
+      <created>1585849703289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585849703290</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add the conversion of dates">
+      <created>1585864286394</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585864286394</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add weak to avoid memory leaks 😅">
+      <created>1585871005312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585871005313</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor to FollowersListViewController 🛠">
+      <created>1585871101636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585871101636</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add delegate to get user followers">
+      <created>1585872397139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585872397139</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add to favorite list logic inside followers list 🚀">
+      <created>1585938644731</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585938644731</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix little bug 🐛">
+      <created>1585939005870</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585939005870</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Retrieve persistence followers 💣">
+      <created>1585939457435</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585939457435</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create favorite cell and refactor some code 😅">
+      <created>1585941821246</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585941821246</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Show favorite table view 🚀">
+      <created>1585943631922</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585943631922</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Show user followers when you click on it 🚀">
+      <created>1585944056116</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585944056116</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add delete function on swipe left 🏄🏻">
+      <created>1585944357455</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585944357455</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor message">
+      <created>1585944603867</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585944603867</updated>
+    </task>
+    <task id="LOCAL-00018" summary="remove unused method">
+      <created>1585956362388</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585956362388</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor code and add better ux">
+      <created>1585958278942</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585958278942</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor custom alert view 🚀">
+      <created>1585959862350</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585959862350</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add convenience to some inits  🚀">
+      <created>1585960261811</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585960261811</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add more convenience inits 🚀">
+      <created>1585960425083</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585960425083</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Remove unnecessary casting of string extension🚀">
+      <created>1585960681046</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585960681047</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Refactor download image view🚀">
+      <created>1585961575793</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585961575793</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add a custom view controller just to show loading view and dismiss">
+      <created>1585961993461</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1585961993461</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Refactor images">
+      <created>1585962338260</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585962338260</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Refactor images sfsymbols 🚀">
+      <created>1585962820140</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1585962820140</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Refactor empty state view🚀">
+      <created>1585963562704</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1585963562705</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fix bug on search followers 🐛">
+      <created>1585963978333</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1585963978334</updated>
+    </task>
+    <task id="LOCAL-00030" summary="better scroll animation 🏄‍">
+      <created>1585964139676</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1585964139676</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Dont do more calls to api when is loading  🏄‍">
+      <created>1585964387720</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1585964387720</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add weak to avoid memory leaks " />
+    <MESSAGE value="refactor to FollowersListViewController " />
+    <MESSAGE value="Add delegate to get user followers" />
+    <MESSAGE value="Add to favorite list logic inside followers list " />
+    <MESSAGE value="Fix little bug " />
+    <MESSAGE value="Retrieve persistence followers " />
+    <MESSAGE value="Create favorite cell and refactor some code " />
+    <MESSAGE value="Show favorite table view " />
+    <MESSAGE value="Show user followers when you click on it " />
+    <MESSAGE value="add delete function on swipe left " />
+    <MESSAGE value="refactor message" />
+    <MESSAGE value="remove unused method" />
+    <MESSAGE value="Refactor code and add better ux" />
+    <MESSAGE value="Refactor custom alert view " />
+    <MESSAGE value="add convenience to some inits  " />
+    <MESSAGE value="add more convenience inits " />
+    <MESSAGE value="Remove unnecessary casting of string extension" />
+    <MESSAGE value="Refactor download image view" />
+    <MESSAGE value="Add a custom view controller just to show loading view and dismiss" />
+    <MESSAGE value="Refactor images" />
+    <MESSAGE value="Refactor images sfsymbols " />
+    <MESSAGE value="Refactor empty state view" />
+    <MESSAGE value="Fix bug on search followers " />
+    <MESSAGE value="better scroll animation ‍" />
+    <MESSAGE value="Dont do more calls to api when is loading  ‍" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dont do more calls to api when is loading  ‍" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1076" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585365126294">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-1076" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585365126294" />
+    <state x="-765" y="168" key="#com.intellij.ide.util.MemberChooser" timestamp="1585957970747">
+      <screen x="-1080" y="-507" width="1080" height="1897" />
+    </state>
+    <state x="-765" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585943510317" />
+    <state x="-765" y="168" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/-1080.-507.1080.1897@-1080.-507.1080.1897" timestamp="1585957970747" />
+    <state x="-802" y="184" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585962545543">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-802" y="184" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585962545543" />
+    <state x="-930" y="-150" key="CommitChangelistDialog2" timestamp="1585964387587">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-930" y="-150" key="CommitChangelistDialog2/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585964387587" />
+    <state x="-1078" y="-38" key="CommitChangelistDialog2/0.23.1440.877/-1080.-507.1080.1897@-1080.-507.1080.1897" timestamp="1585958278640" />
+    <state x="-1078" y="-55" key="CommitChangelistDialog2/0.23.1440.877/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585941821056" />
+    <state x="-1080" y="59" width="1080" height="720" key="DiffContextDialog" timestamp="1585943629784">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-1080" y="59" width="1080" height="720" key="DiffContextDialog/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585943629784" />
+    <state x="-939" y="254" key="FileDocumentManager.FileCacheConflict" timestamp="1585615324787">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-939" y="254" key="FileDocumentManager.FileCacheConflict/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585615324787" />
+    <state x="-678" y="341" key="GitRewordDialog" timestamp="1585601093825">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-678" y="341" key="GitRewordDialog/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585601093825" />
+    <state x="280" y="92" key="SettingsEditor" timestamp="1586105254125">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="-1031" y="69" key="SettingsEditor/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585961617688" />
+    <state x="65" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585508985815" />
+    <state x="280" y="92" key="SettingsEditor/0.23.1440.877/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1586105254125" />
+    <state x="288" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1586104880738">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="-864" y="276" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585927287063" />
+    <state x="288" y="378" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1080.-530.1080.1920@0.0.1440.900" timestamp="1586104880738" />
+    <state x="-864" y="289" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1080.-507.1080.1897@-1080.-507.1080.1897" timestamp="1585957660683" />
+    <state x="288" y="391" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1586060044974" />
+    <state x="-870" y="171" width="659" height="518" key="find.popup" timestamp="1585962233347">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-870" y="171" width="659" height="518" key="find.popup/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585962233347" />
+    <state x="-875" y="-79" width="670" height="676" key="search.everywhere.popup" timestamp="1585963753352">
+      <screen x="-1080" y="-530" width="1080" height="1920" />
+    </state>
+    <state x="-875" y="-79" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-1080.-530.1080.1920@-1080.-530.1080.1920" timestamp="1585963753352" />
+    <state x="-875" y="-79" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1080.-507.1080.1897@-1080.-507.1080.1897" timestamp="1585958017077" />
+  </component>
+</project>
