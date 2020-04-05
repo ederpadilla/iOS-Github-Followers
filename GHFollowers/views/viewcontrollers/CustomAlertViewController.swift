@@ -27,6 +27,7 @@ class CustomAlertViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        view.addSubViews(views: containerViewController, titleLabel, messageLabel, acceptButton)
         setUpContainerView()
         setUpTitle()
         setUpMessage()
@@ -34,7 +35,6 @@ class CustomAlertViewController: UIViewController {
     }
 
     private func setUpContainerView() {
-        view.addSubview(containerViewController)
 
         NSLayoutConstraint.activate([
             containerViewController.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -47,9 +47,6 @@ class CustomAlertViewController: UIViewController {
     private func setUpTitle() {
         titleLabel.text = alertTitle ?? "nil"
         messageLabel.text = message ?? "nil"
-        containerViewController.addSubview(titleLabel)
-        containerViewController.addSubview(messageLabel)
-        containerViewController.addSubview(acceptButton)
 
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: containerViewController.topAnchor, constant: padding),
@@ -62,7 +59,6 @@ class CustomAlertViewController: UIViewController {
     private func setUpMessage() {
         messageLabel.text = message ?? "nil"
         messageLabel.numberOfLines = 4
-        containerViewController.addSubview(messageLabel)
 
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
@@ -75,7 +71,6 @@ class CustomAlertViewController: UIViewController {
     private func setUpButton() {
         acceptButton.setTitle(buttonText, for: .normal)
         acceptButton.addTarget(self, action: #selector(dismissViewController), for: .touchUpInside)
-        containerViewController.addSubview(acceptButton)
 
 
         NSLayoutConstraint.activate([

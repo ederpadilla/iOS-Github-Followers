@@ -33,8 +33,7 @@ class ItemInfoViewController: UIViewController {
     }
 
     private func layoutUI() {
-        view.addSubview(stackView)
-        view.addSubview(actionButton)
+        view.addSubViews(views: stackView, actionButton)
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
         let padding: CGFloat = 20
